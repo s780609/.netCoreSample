@@ -1,0 +1,23 @@
+# Visual Studio 2015/2017 cache/options directory
+.vs/
+*.cache
+
+# If you ever enable show all files in visual studio, this file will be generated.
+*.csproj.user
+# Web-Like Project's user file
+*.pubxml.user 
+
+# Short for solution user option. It store the user gui preference / breakpoints / unsavefiles...
+*.suo
+
+# NugetPackages
+packages/
+
+# Products
+obj/
+bin/
+bin/Debug/
+*/**/bin/Debug
+*/**/bin/Release
+*/**/obj/Debug
+*/**/obj/Release
