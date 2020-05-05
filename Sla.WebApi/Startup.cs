@@ -10,6 +10,7 @@ using Sla.Repository.Implement;
 using Sla.Repository.Interface;
 using Sla.Service.Implement;
 using Sla.Service.Interface;
+using System;
 
 namespace Sla.WebApi
 {
@@ -34,7 +35,7 @@ namespace Sla.WebApi
             services.AddScoped<IShipperRepository, ShipperRepository>();
             services.AddScoped<IShipperService, ShipperService>();
 
-            services.AddAutoMapper(typeof(Startup));
+            services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
